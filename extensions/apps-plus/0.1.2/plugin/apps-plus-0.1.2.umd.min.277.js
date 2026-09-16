@@ -1,0 +1,2 @@
+"use strict";(("undefined"!==typeof self?self:this)["webpackChunkapps_plus_0_1_2"]=("undefined"!==typeof self?self:this)["webpackChunkapps_plus_0_1_2"]||[]).push([[277],{28277:function(e,n,s){s.r(n),s.d(n,{default:function(){return a}});var t=s(9274);function o(e,n,s,o,u,r){const c=(0,t.resolveComponent)("ResourceDetail");return(0,t.openBlock)(),(0,t.createBlock)(c)}var u=s(78536),r={name:"ClusterResourceNamespaceId",components:{ResourceDetail:u.A}},c=s(47433);const p=(0,c.A)(r,[["render",o]]);var a=p}}]);
+//# sourceMappingURL=apps-plus-0.1.2.umd.min.277.js.map

@@ -1,0 +1,27 @@
+apiVersion: v1
+entries:
+  apps-plus:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/display-name: Apps Plus
+      catalog.cattle.io/namespace: cattle-ui-plugin-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux, windows
+      catalog.cattle.io/rancher-version: '>= 2.10.0'
+      catalog.cattle.io/scope: management
+      catalog.cattle.io/ui-component: plugins
+      catalog.cattle.io/ui-extensions-version: '>= 3.0.0 < 5.0.0'
+    apiVersion: v2
+    appVersion: 0.1.2
+    created: "2026-09-16T19:10:16.961587021Z"
+    description: 'Apps and instances: a chart you can edit in the dashboard, deployed
+      by Fleet'
+    digest: 85c3e2865956d92996d6702603bb5363112ff5687926358f0ba95eb9499f45e9
+    home: https://github.com/marcelofukumoto/apps-plus
+    icon: https://marcelofukumoto.github.io/apps-plus/icon.svg
+    name: apps-plus
+    type: application
+    urls:
+    - assets/apps-plus/apps-plus-0.1.2.tgz
+    version: 0.1.2
+generated: "2026-09-16T19:10:16.961184674Z"
