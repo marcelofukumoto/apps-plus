@@ -1,53 +1,24 @@
 {
   "compilerOptions": {
-    "allowJs": true,
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "jsx": "preserve",
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "skipLibCheck": true,
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
+    "allowJs": true,
+    "sourceMap": false,
+    "strict": true,
+    "noEmit": true,
     "baseUrl": ".",
-    "preserveSymlinks": true,
-    "typeRoots": [
-      "../../node_modules",
-      "../../node_modules/@rancher/shell/types"
-    ],    
-    "types": [
-      "node",
-      "webpack-env",
-      "@types/node",
-      "@types/jest",
-      "@types/lodash",
-      "rancher",
-      "shell"
-    ],
-    "lib": [
-      "esnext",
-      "dom",
-      "dom.iterable",
-      "scripthost"
-    ],
     "paths": {
-      "@shell/*": [
-        "../../node_modules/@rancher/shell/*"
-      ],
-      "@components/*": [
-        "@rancher/components/*"
-      ]
-    }
+      "~/*": ["./*"],
+      "@/*": ["./*"],
+      "@shell/*": ["./node_modules/@rancher/shell/*"],
+      "@components/*": ["./node_modules/@rancher/shell/rancher-components/*"],
+      "@pkg/*": ["./pkg/apps-plus/*"]
+    },
+    "typeRoots": ["./node_modules", "./node_modules/@rancher/shell/types"],
+    "types": ["@types/node", "rancher", "shell"]
   },
-  "include": [
-    "**/*.ts",
-    "**/*.d.ts",
-    "**/*.tsx",
-    "**/*.vue"
-  ],
-  "exclude": [
-    "../../node_modules"
-  ]
+  "exclude": ["node_modules", "dist-pkg"]
 }

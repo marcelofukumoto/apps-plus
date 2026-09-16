@@ -1,0 +1,29 @@
+{
+  "name": "apps-plus",
+  "description": "Apps and instances: a chart you can edit in the dashboard, deployed by Fleet",
+  "version": "0.1.2",
+  "private": false,
+  "rancher": {
+    "annotations": {
+      "catalog.cattle.io/rancher-version": ">= 2.10.0",
+      "catalog.cattle.io/ui-extensions-version": ">= 3.0.0 < 5.0.0",
+      "catalog.cattle.io/display-name": "Apps Plus"
+    }
+  },
+  "scripts": {},
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "5.0.9",
+    "@vue/cli-service": "5.0.8",
+    "@vue/cli-plugin-typescript": "5.0.9"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "icon": "https://marcelofukumoto.github.io/apps-plus/icon.svg",
+  "homepage": "https://github.com/marcelofukumoto/apps-plus"
+}
